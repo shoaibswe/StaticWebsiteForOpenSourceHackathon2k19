@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <head>
 	<title>National Open Source Hackathon Bangladesh</title>
   <meta charset="utf-8">
@@ -9,15 +10,22 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <script src="js/myjs.js"></script>
+ 
 </head>
 <body style="text-align: right; font-style: bold; text-decoration: none;">
-	<nav>
+
+<button onclick="topFunction()" id="TopBtn" title="Go to top">&nbsp;^&nbsp; </button>
+
+	<nav class="col-md-12"  role="navigation">
 		<ul>
 			<li><a href="#home">HOME</a></li>	
+            <li><a href="#benifits">Benifits</a></li>   
 			<li><a href="#schedule">Schedule</a></li>	
 			<li><a href="#judge">Judge</a></li>	
 			<li><a href="#speaker">Speakers</a></li>
-			<li><a href="#reg">Registration</a></li>	
+            <li><a href="#prizes-kit">Prizes</a></li>
+            <li><a href="#reg">Registration</a></li>	
 		</ul>
 	</nav>
 
@@ -83,6 +91,54 @@
 </div>
 
 
+
+<div id="benifits"> 
+    <div class="container">
+    <h1 style="text-decoration: underline;">The Benefits of Open Source Hackathon 2019</h1>
+        <div class="row" align="left">
+       
+   
+            <h3 style="text-align: center;">Community building</h3>
+
+                    <p style="text-align: left; margin-left: 1%">Open Source Hackathon 2019 is the first open source hackathon in Bangladesh that promotes the use of open source tools and technologies to develop solutions. It is a network that connects the academicians, students and industrialists to work together. Especially, Daffodil Software Limited (DSL) will be playing the role of intermediary to connect industrialists with students for sharing the problems, ideas and solutions. Even the academician can team up with the students to mentor them for building useful prototypes. It might be a knowledge sharing platform where the industrialists can find out their internal problems and the students can provide the solutions.</p>
+<br>
+            
+           <div class="col-md-3">
+        
+            <h3 class="bfits">Ownership</h3>
+
+                    <p>Through this hackathon, a business policy can be proposed by the mutual understanding of the students, industrialists and the DSL. Students have the right to take full or shared ownership of their solutions. The ownership decision belongs to the students, whether they want to sell the solution or provide technical support in the long run*. The best thing about this hackathon is that the students will always find DSL besides them as the marketing partner. 
+                    </p>
+
+          </div>
+
+    <div class="col-md-3">
+        
+            <h3 class="bfits">Chance of developing low-cost solutions</h3>
+
+                    <p>Most of the real-world business solutions require a high development cost. Open Source Hackathon 2019 is an open platform where the industrialists can provide full business requirements and the students can provide solutions with their fresh mind in a few days. It is not surprising that those solutions could be implemented at a low cost. </p>
+
+          </div>
+
+    <div class="col-md-3">
+        
+            <h3 class="bfits">New hire opportunities</h3>
+
+                    <p>Since the recruitment of creative and self-motivated employee is a lengthy process, Open Source Hackathon 2019 is the ample opportunity to dig out the best individual for a company. It is equally beneficial to the students who might get a dream job during their study. .</p>
+
+          </div>
+
+    <div class="col-md-3">
+        
+            <h3 class="bfits">Finding inspiration</h3>
+
+                    <p>Open Source Hackathon 2019 is the place where people will be inspired by new ideas and solution. It will help people from every sector to re-think from a new perspective and get rid of the old ideas and believes. It is the best opportunity to meet new people, express innovative ideas and being challenged by the concrete business requirements.   </p>
+
+          </div>
+
+    </div>
+</div>
+</div>
 
 
 	<div id="judge" class="section speakers">
@@ -245,6 +301,21 @@
 	</div>
 
 
+<div id="prizes-kit" style="background-image: url(images/prise.png); background-repeat: no-repeat;">
+    <div id="container">
+        <div class="row">
+            <div class="col-md-12">
+            <h1 style="padding-left: 15%">Prizes and Kit</h1>
+            <ul class="prize">
+                <li><h3>For each category winner will get BDT 20000</h3></li><br>
+                <li><h3>For each category runner up will get BDT 15000</h3></li><br>
+                <li><h3>Everyone will get certificate for participation</h3></li><br>
+                <li><h3>An attractive kit will be provided during registration</h3></li><br>
+            </ul>
+            </div>
+        </div>
+    </div>
+</div>
 
 <div id="reg">
 <table width="100%">
@@ -352,4 +423,5 @@ if(isset($_POST['submit'])) {
 <a href="mailto:shoaibswe@gmail.com"; title="Find Me">
 ©OpenSource Hackathon 2K19 <br> Developed by  Shoaib Rahman</a>
  </div>
+
 </html>
