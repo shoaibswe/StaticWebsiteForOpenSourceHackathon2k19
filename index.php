@@ -17,13 +17,14 @@
 
 <button onclick="topFunction()" id="TopBtn" title="Go to top">&nbsp;^&nbsp; </button>
 
-	<nav class="col-md-12"  role="navigation">
+	<nav class="col-md-12 col-sm-12"   role="navigation" style="display: block; position: fixed;"> 
 		<ul>
 			<li><a href="#home">HOME</a></li>	
-            <li><a href="#benifits">Benifits</a></li>   
-			<li><a href="#schedule">Schedule</a></li>	
-			<li><a href="#judge">Judge</a></li>	
-			<li><a href="#speaker">Speakers</a></li>
+            <li><a href="#benifits">About</a></li>   
+			<li><a href="#mentor">Mentors</a></li>	
+			<li><a href="#judge">Judge</a></li>  
+            <li><a href="#speaker">Speakers</a></li>
+            <li><a href="#schedule">Schedule</a></li>   
             <li><a href="#prizes-kit">Prizes</a></li>
             <li><a href="#reg">Registration</a></li>	
 		</ul>
@@ -94,13 +95,13 @@
 
 <div id="benifits"> 
     <div class="container">
-    <h1 style="text-decoration: underline;">The Benefits of Open Source Hackathon 2019</h1>
+    <h1 style="text-decoration: underline;">About Open Source Hackathon 2019</h1>
         <div class="row" align="left">
        
    
-            <h3 style="text-align: center;">Community building</h3>
+            <h3 class="col-md-12" style="text-align: center;">Community building</h3>
 
-                    <p style="text-align: left; margin-left: 1%">Open Source Hackathon 2019 is the first open source hackathon in Bangladesh that promotes the use of open source tools and technologies to develop solutions. It is a network that connects the academicians, students and industrialists to work together. Especially, Daffodil Software Limited (DSL) will be playing the role of intermediary to connect industrialists with students for sharing the problems, ideas and solutions. Even the academician can team up with the students to mentor them for building useful prototypes. It might be a knowledge sharing platform where the industrialists can find out their internal problems and the students can provide the solutions.</p>
+                    <p style="text-align: left;" class="col-md-12">Open Source Hackathon 2019 is the first open source hackathon in Bangladesh that promotes the use of open source tools and technologies to develop solutions. It is a network that connects the academicians, students and industrialists to work together. Especially, Daffodil Software Limited (DSL) will be playing the role of intermediary to connect industrialists with students for sharing the problems, ideas and solutions. Even the academician can team up with the students to mentor them for building useful prototypes. It might be a knowledge sharing platform where the industrialists can find out their internal problems and the students can provide the solutions.</p>
 <br>
             
            <div class="col-md-3">
@@ -141,7 +142,49 @@
 </div>
 
 
-	<div id="judge" class="section speakers">
+	<div id="mentor" class="section speakers">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1 class="section-title">Mentors</h1>
+                </div>
+           
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="speaker">
+                        <figure>
+                            <img alt="" class="img-responsive center-block" src="images/khan.jpg" height="400px" width="400px">
+                        </figure>
+                        <h4>Asif Khan Shakir</h4>
+                        <p>DIU</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="speaker">
+                        <figure>
+                            <img alt="" class="img-responsive center-block" src="images/shoaib.jpg" height="400px" width="400px">
+                        </figure>
+                        <h4>Shoaib Rahman</h4>
+                        <p>DIU</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="speaker">
+                        <figure>
+                            <img alt="" class="img-responsive center-block" src="images/touhidbh.jpg" height="400px" width="400px">
+                        </figure>
+                        <h4>Dr Touhid Bhuiyan</h4>
+                        <p>DIU</p>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="judge" class="section speakers">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
@@ -182,6 +225,50 @@
             </div>
         </div>
     </div>
+
+
+
+    <div id="speaker" class="section speakers">
+              <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1 class="section-title">Speakers</h1>
+                </div>
+           
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="speaker">
+                        <figure>
+                            <img alt="" class="img-responsive center-block" src="images/khan.jpg" height="400px" width="400px">
+                        </figure>
+                        <h4>Asif Khan Shakir</h4>
+                        <p>DIU</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="speaker">
+                        <figure>
+                            <img alt="" class="img-responsive center-block" src="images/shoaib.jpg" height="400px" width="400px">
+                        </figure>
+                        <h4>Shoaib Rahman</h4>
+                        <p>DIU</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="speaker">
+                        <figure>
+                            <img alt="" class="img-responsive center-block" src="images/touhidbh.jpg" height="400px" width="400px">
+                        </figure>
+                        <h4>Dr Touhid Bhuiyan</h4>
+                        <p>DIU</p>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+	</div>
 
 
 <div id="schedule" class="section schedule">
@@ -249,56 +336,10 @@
                         <p>Mr Touhid Bhuiyan</p>
                     </div>
                 </div>
-
-
-
    </div>
    </div>
-	</div>
+    </div>
 
-
-
-    <div id="speaker" class="section speakers">
-              <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <h1 class="section-title">Speakers</h1>
-                </div>
-           
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="speaker">
-                        <figure>
-                            <img alt="" class="img-responsive center-block" src="images/khan.jpg" height="400px" width="400px">
-                        </figure>
-                        <h4>Asif Khan Shakir</h4>
-                        <p>DIU</p>
-                    </div>
-                </div>
-
-                <div class="col-md-4">
-                    <div class="speaker">
-                        <figure>
-                            <img alt="" class="img-responsive center-block" src="images/shoaib.jpg" height="400px" width="400px">
-                        </figure>
-                        <h4>Shoaib Rahman</h4>
-                        <p>DIU</p>
-                    </div>
-                </div>
-
-                <div class="col-md-4">
-                    <div class="speaker">
-                        <figure>
-                            <img alt="" class="img-responsive center-block" src="images/touhidbh.jpg" height="400px" width="400px">
-                        </figure>
-                        <h4>Dr Touhid Bhuiyan</h4>
-                        <p>DIU</p>
-                    </div>
-                </div>
-            </div>
-            </div>
-        </div>
-	</div>
 
 
 <div id="prizes-kit" style="background-image: url(images/prise.png); background-repeat: no-repeat;">
@@ -322,83 +363,108 @@
     <tr>
    
    <td width="70%" height="50%">
+
 <?php
 include("connection.php");
 
 if(isset($_POST['submit'])) {
     $name = $_POST['name'];
+    $probdomain = $_POST['probdomain'];
+    $pmanager=$_POST['pmanager'];
     $participantsName1 = $_POST['participantsName1'];
     $participantsName2 = $_POST['participantsName2'];
     $participantsName3 = $_POST['participantsName3'];
-    $interestedArea=$_POST['interestedArea'];
+    $interestedArea = $_POST['interestedArea'];
     $email = $_POST['email'];
     $mobileNum = $_POST['mobileNum'];
     $Organization = $_POST['Organization'];
 
-    if($name == "" || $participantsName1 == "" || $interestedArea == "" || $email == "" || $mobileNum=="" || $Organization=="") {
+    if($name == "" || $probdomain == "" || $pmanager == "" || $email == "" || $mobileNum=="" || $Organization=="") {
         echo "All fields should be filled. Either one or many fields are empty.";
         echo "<br/>";
         echo "<a href='index.php'>Retry</a>";
     } else {
-        mysqli_query($mysqli, "INSERT INTO members(name,participantsName1,participantsName2,participantsName3,interestedArea, email, mobileNum, Organization) VALUES('$name','$participantsName1','$participantsName2','$participantsName3','$interestedArea', '$email', '$mobileNum', '$Organization')")
-            or die("Sorry Something went wrong!");
+        if (! mysqli_query($mysqli, "INSERT INTO members VALUES('$name', '$probdomain', '$pmanager', '$participantsName1', '$participantsName2', '$participantsName3', '$interestedArea', '$email', '$mobileNum', '$Organization')"))
+        {
+          echo("Error description: " . mysqli_error($mysqli));
+        }
+
+        mysqli_close($mysqli);
             
         echo "<span id='rg'>Registration successfull</span>";
         echo "<br/>";
     }
 } else {
 ?>
-   
+
+
+
+
  <form  id="backgnd" name="form1" method="post" action="" style="background-image: url(images/techno.png); background-size: cover;
  background-attachment: fixed;    font-family: new time roman;">
    <div class="container">
     <div class="row">
         <div class="col-md-3"></div>
         <div class="col-md-6">
-            <h1 class="text-center">REGISTER</h1>
+            <h1 class="text-center">REGISTRATION</h1>
 
             <label class="labell col-md-3 control-label">Team Name</label>
             <div class="col-md-9">
                 <input type="text" name="name" class="form-control" placeholder="Team Name">
             </div>
 
-           <label class="labell col-md-3 control-label">Member Name - 1</label>
+           <label class="labell col-md-3 control-label">Problem Domain</label>
             <div class="col-md-9">
-                <input type="text" name="participantsName1" class="form-control" placeholder="Mr X" required="true">
-            </div>
-
-           <label class="labell col-md-3 control-label">Member Name - 2 (If any)</label>
-            <div class="col-md-9">
-                <input type="text" name="participantsName2" class="form-control" placeholder="Mr Y">
-            </div>
-
-           <label class="labell col-md-3 control-label">Member Name - 3 (If any)</label>
-            <div class="col-md-9">
-                <input type="text" name="participantsName3" class="form-control" placeholder="Mr Z">
-            </div>
-
-           <label class="labell col-md-3 control-label">Interested Area</label>
-            <div class="col-md-9">
-               <select id="interestedArea" name="interestedArea" class="form-control">
-        <option value="australia">Mobile App</option>
-        <option value="canada">Web App</option>
-        <option value="usa">PC App</option>
+               <select id="probdomain" name="probdomain" class="form-control" required="true">
+        <option value="mobile">Mobile App</option>
+        <option value="web">Web App</option>
+        <option value="standalone">Standalone App</option>
+        <option value="Other">Other</option>
                 </select>
             </div>    
+            
+           <label class="labell col-md-3 control-label">Project Manager</label>
+            <div class="col-md-9">
+                <input type="text" name="pmanager" class="form-control" placeholder="Mr PM" required="true">
+            </div>
+          <label class="labell col-md-3 control-label">Business Analyst</label>
+            <div class="col-md-9">
+                <input type="text" name="banalyst" class="form-control" placeholder="Mr B.A" required="true">
+            </div>
+
+           <label class="labell col-md-3 control-label">Software Developer - 1</label>
+            <div class="col-md-9">
+                <input type="text" name="swd1" class="form-control" placeholder="Mr X" required="true">
+            </div>
+
+           <label class="labell col-md-3 control-label">Software Developer - 2 (If any)</label>
+            <div class="col-md-9">
+                <input type="text" name="swd2" class="form-control" placeholder="Mr Y">
+            </div>
+
+           <label class="labell col-md-3 control-label">Software Developer -3 (If any)</label>
+            <div class="col-md-9">
+                <input type="text" name="swd3" class="form-control" placeholder="Mr Z">
+            </div>
+
 
             <label class="labell col-md-3 control-label">Email Adress</label>
             <div class="col-md-9">
-                <input type="text" name="email" class="form-control" placeholder="email@email.com">
+                <input type="email" name="email" class="form-control" placeholder="email@email.com" required="true">
             </div>
 
            <label class="labell col-md-3 control-label">Mobile Number</label>
             <div class="col-md-9">
-                <input type="number" name="mobileNum" class="form-control" placeholder="01xxxxxxxxxx">
+                <input type="number" name="mobileNum" class="form-control" placeholder="01xxxxxxxxxx" required="true">
+            </div>
+           <label class="labell col-md-3 control-label">Alternative Number</label>
+            <div class="col-md-9">
+                <input type="altnumber" name="mobileNum" class="form-control" placeholder="01xxxxxxxxxx" required="true">
             </div>
 
-           <label class="labell col-md-3 control-label">Organization Name</label>
+           <label class="labell col-md-3 control-label">Institute/Organization Name</label>
             <div class="col-md-9">
-                <input type="text" name="Organization" class="form-control" placeholder="XYZ Company">
+                <input type="text" name="Organization" class="form-control" placeholder="XYZ Company" required="true">
             </div>
 
             <input type="submit" name="submit" value="Submit" class="btn btn-info">
