@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 23, 2019 at 07:13 PM
+-- Generation Time: May 29, 2019 at 03:39 PM
 -- Server version: 10.1.40-MariaDB
 -- PHP Version: 7.3.5
 
@@ -30,13 +30,17 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `members` (
   `name` varchar(30) NOT NULL,
-  `participantsName1` varchar(30) NOT NULL,
-  `participantsName2` varchar(30) DEFAULT NULL,
-  `participantsName3` varchar(30) DEFAULT NULL,
-  `interestedArea` varchar(20) NOT NULL,
-  `email` varchar(40) NOT NULL,
-  `mobileNum` int(15) NOT NULL,
-  `Organization` varchar(50) NOT NULL
+  `probdomain` varchar(30) NOT NULL,
+  `pmanager` varchar(33) NOT NULL,
+  `banalyst` varchar(33) NOT NULL,
+  `swd1` varchar(33) NOT NULL,
+  `swd2` varchar(33) NOT NULL,
+  `swd3` varchar(33) NOT NULL,
+  `email` varchar(33) NOT NULL,
+  `mobileNum` varchar(33) NOT NULL,
+  `altmobileNum` varchar(33) NOT NULL,
+  `Organization` varchar(33) NOT NULL,
+  `trxid` varchar(33) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 COMMIT;
 

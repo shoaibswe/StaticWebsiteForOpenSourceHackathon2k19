@@ -31,7 +31,7 @@ body{
 }
 
 nav{
-	margin-left: 35%;
+	margin-left: 10%;
 	width: 100%;	
 	color: #e4321e;
 	background: transparent;
@@ -69,14 +69,13 @@ li{
 }
 a{
 	padding: 20px;
-	width: 100px;
+	width: 100%;
 	display: block;
 	text-decoration: none;
 	color: #e4321e;
 	text-transform: uppercase;
 	font-weight: bold;
 }
-
 #home{
 	height: 700px;
 	background: pink;
@@ -309,4 +308,11 @@ margin-top: 0;
   margin: 0 0 20px;
   text-transform: uppercase;
   text-align: center;
+}
+
+
+#rulesndreg{
+		height: 700px;
+	display: inline-block;
+	width: 100%;
 }

@@ -20,10 +20,11 @@
 	<nav class="col-md-12 col-sm-12"   role="navigation" style="display: block; position: fixed;"> 
 		<ul>
 			<li><a href="#home">HOME</a></li>	
-            <li><a href="#benifits">About</a></li>   
-			<li><a href="#mentor">Mentors</a></li>	
+            <li><a href="#benifits">About OSH</a></li>   
+            <li><a href="rulesndreg.php" target="_blank">Rules and Regulations</a></li>   
+            <li><a href="#mentor">Mentors</a></li>	
 			<li><a href="#judge">Judge</a></li>  
-            <li><a href="#speaker">Speakers</a></li>
+            <li><a href="#speaker">Guests and Speakers</a></li>
             <li><a href="#schedule">Schedule</a></li>   
             <li><a href="#prizes-kit">Prizes</a></li>
             <li><a href="#reg">Registration</a></li>	
@@ -142,6 +143,10 @@
 </div>
 
 
+<div class="col-md-12" style="background-image: url(images/rules.jpg);  background-size: cover;background-attachment: fixed;">
+    <h2 style="text-align: center;"> Read About<a href="rulesndreg.php" target="_blank" style="text-align: center; color: red">Rules And Regulations</a></h2>
+</div>
+
 	<div id="mentor" class="section speakers">
         <div class="container">
             <div class="row">
@@ -232,7 +237,7 @@
               <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <h1 class="section-title">Speakers</h1>
+                    <h1 class="section-title">Guests and Speakers</h1>
                 </div>
            
             <div class="row">
@@ -371,20 +376,22 @@ if(isset($_POST['submit'])) {
     $name = $_POST['name'];
     $probdomain = $_POST['probdomain'];
     $pmanager=$_POST['pmanager'];
-    $participantsName1 = $_POST['participantsName1'];
-    $participantsName2 = $_POST['participantsName2'];
-    $participantsName3 = $_POST['participantsName3'];
-    $interestedArea = $_POST['interestedArea'];
+    $banalyst = $_POST['banalyst'];
+    $swd1 = $_POST['swd1'];
+    $swd2 = $_POST['swd2'];
+    $swd3 = $_POST['swd3'];
     $email = $_POST['email'];
     $mobileNum = $_POST['mobileNum'];
+    $altmobileNum = $_POST['altmobileNum'];
     $Organization = $_POST['Organization'];
+    $trxid = $_POST['trxid'];
 
     if($name == "" || $probdomain == "" || $pmanager == "" || $email == "" || $mobileNum=="" || $Organization=="") {
         echo "All fields should be filled. Either one or many fields are empty.";
         echo "<br/>";
         echo "<a href='index.php'>Retry</a>";
     } else {
-        if (! mysqli_query($mysqli, "INSERT INTO members VALUES('$name', '$probdomain', '$pmanager', '$participantsName1', '$participantsName2', '$participantsName3', '$interestedArea', '$email', '$mobileNum', '$Organization')"))
+        if (! mysqli_query($mysqli, "INSERT INTO members VALUES('$name', '$probdomain', '$pmanager', '$banalyst', '$swd1', '$swd2', '$swd3', '$email', '$mobileNum','$altmobileNum', '$Organization','trxid')"))
         {
           echo("Error description: " . mysqli_error($mysqli));
         }
@@ -459,12 +466,17 @@ if(isset($_POST['submit'])) {
             </div>
            <label class="labell col-md-3 control-label">Alternative Number</label>
             <div class="col-md-9">
-                <input type="altnumber" name="mobileNum" class="form-control" placeholder="01xxxxxxxxxx" required="true">
+                <input type="number" name="altmobileNum" class="form-control" placeholder="01xxxxxxxxxx" required="true">
             </div>
 
-           <label class="labell col-md-3 control-label">Institute/Organization Name</label>
+           <label class="labell col-md-3 control-label">Institute/University Name</label>
             <div class="col-md-9">
                 <input type="text" name="Organization" class="form-control" placeholder="XYZ Company" required="true">
+            </div>
+
+           <label class="labell col-md-3 control-label">Transaction ID</label>
+            <div class="col-md-9">
+                <input type="text" name="trxid" class="form-control" placeholder="Payment Info" required="true">
             </div>
 
             <input type="submit" name="submit" value="Submit" class="btn btn-info">
